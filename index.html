@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Book Viewer</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body { margin: 0; background-color: #f0f0f0; }
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer src="3d_Book_test.glb"
+                alt="3D Book Cover"
+                auto-rotate
+                camera-controls
+                touch-action="pan-y"
+                exposure="1"
+                shadow-intensity="1"
+                ar
+                ar-modes="scene-viewer webxr quick-look"
+                environment-image="neutral">
+  </model-viewer>
+</body>
+</html>
